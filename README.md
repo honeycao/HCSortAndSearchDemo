@@ -1,6 +1,6 @@
 # SearchDemo
 全方位搜索功能，支持中英文互搜，联想搜索等
-![image](https://github.com/honeycao/AutoCycleScrollDemo/blob/master/AutoCycleScroll.gif ) 
+![image](https://github.com/honeycao/SearchDemo/blob/master/FriendSearch.gif ) 
 >对网上一些搜索代码的总结，功能基本都可以
 ##1、实现功能
 * 自动对传进去的数据分组，按首字母分组

@@ -107,8 +107,8 @@
         //判断首字符是否为字母
         NSString *regex = @"[A-Za-z]+";
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
-      
-        if ([predicate evaluateWithObject:chineseString.string])
+        NSString *header = [chineseString.string substringToIndex:1];
+        if ([predicate evaluateWithObject:header])
         {
             //首字母大写
             chineseString.pinYin = [chineseString.string capitalizedString] ;

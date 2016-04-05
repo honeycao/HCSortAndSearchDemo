@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SearchViewController.h
 //  FriendSearch
 //
 //  Created by Caoyq on 16/3/28.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-- (IBAction)clickedBtn1:(id)sender;
-- (IBAction)CilckedBtn2:(id)sender;
+@interface SearchViewController : UITableViewController
 
 @end
-

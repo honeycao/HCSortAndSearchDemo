@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^SelectedItem)(NSString *item);
 @interface AnotherSearchViewController : UIViewController
 
-@property (strong, nonatomic) NSArray *dataSource;/**<排序前的整个数据源*/
+@property (strong, nonatomic) SelectedItem block;
 
+- (void)didSelectedItem:(SelectedItem)block;
 @end

@@ -16,8 +16,9 @@
 
 
 ##2、使用方法
-* 
+* 下载并把`HCSearch`添加到项目中
 * 如果demo中的模型和搜索都需要，那么可以按照`SearchViewController`和`AnotherSearchViewController`来做
+* 如果只需要搜索功能，那么可以只添加`HCSerach/PinYinSearchLib`即可，用的时候只需如下
 
 `2016、4、7 update`
 

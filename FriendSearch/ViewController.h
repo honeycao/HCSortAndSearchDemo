@@ -10,8 +10,6 @@
 
 @interface ViewController : UIViewController
 
-- (IBAction)clickedBtn1:(id)sender;
-- (IBAction)CilckedBtn2:(id)sender;
 
 @end
 

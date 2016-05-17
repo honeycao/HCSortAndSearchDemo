@@ -1,54 +1,26 @@
 //
-//  SearchViewController.m
+//  EasySerachViewController.m
 //  FriendSearch
 //
-//  Created by Caoyq on 16/3/28.
+//  Created by Caoyq on 16/5/17.
 //  Copyright © 2016年 Caoyq. All rights reserved.
 //
 
-#import "SearchViewController.h"
+#import "EasySerachViewController.h"
 #import "ZYPinYinSearch.h"
-#import "ChineseString.h"
 
-#define kColor          [UIColor colorWithRed:230.0/255.0 green:230.0/255.0 blue:230.0/255.0 alpha:1];
-
-@interface SearchViewController ()<UISearchResultsUpdating>
-
+@interface EasySerachViewController ()<UISearchResultsUpdating>
 @property (strong, nonatomic) UISearchController *searchController;
 @property (strong, nonatomic) NSArray *dataSource;/**<排序前的整个数据源*/
-@property (strong, nonatomic) NSArray *allDataSource;/**<排序后的整个数据源*/
 @property (strong, nonatomic) NSMutableArray *searchDataSource;/**<搜索结果数据源*/
-@property (strong, nonatomic) NSArray *indexDataSource;/**<索引数据源*/
-
 @end
+@implementation EasySerachViewController
 
-@implementation SearchViewController
-
-#pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initData];
-    self.tableView.backgroundColor = kColor;
-    [self.tableView setTableHeaderView:self.searchController.searchBar];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
-- (void)dealloc {
-    _searchController = nil;
-    self.tableView = nil;
-}
-
-#pragma mark - Init
-- (void)initData {
     _dataSource = @[@"九寨沟",@"鼓浪屿",@"香格里拉",@"千岛湖",@"西双版纳",@"嫦娥1号",@"1314Love",@"故宫",@"上海科技馆",@"东方明珠",@"外滩",@"HK香港",@"CapeTown",@"The Grand Canyon",@"4567.com",@"-你me"];
     _searchDataSource = [NSMutableArray new];
-    //获取索引的首字母
-    _indexDataSource = [ChineseString IndexArray:_dataSource];
-    //对原数据进行排序重新分组
-    _allDataSource = [ChineseString LetterSortArray:_dataSource];
+    [self.tableView setTableHeaderView:self.searchController.searchBar];
 }
 
 - (UISearchController *)searchController {
@@ -64,35 +36,12 @@
 }
 
 #pragma mark - UITableViewDataSource
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    if (!self.searchController.active) {
-        return _indexDataSource.count;
-    }else {
-        return 1;
-    }
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (!self.searchController.active) {
-        return [_allDataSource[section] count];
+        return _dataSource.count;
     }else {
         return _searchDataSource.count;
-    }
-}
-//头部索引标题
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    if (!self.searchController.active) {
-        return _indexDataSource[section];
-    }else {
-        return nil;
-    }
-}
-//右侧索引列表
-- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-    if (!self.searchController.active) {
-        return _indexDataSource;
-    }else {
-        return nil;
     }
 }
 
@@ -103,23 +52,17 @@
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     }
     if (!self.searchController.active) {
-        cell.textLabel.text = _allDataSource[indexPath.section][indexPath.row];
+        cell.textLabel.text = _dataSource[indexPath.row];
     }else{
         cell.textLabel.text = _searchDataSource[indexPath.row];
     }
     return cell;
 }
-//索引点击事件
-- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
-    [tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:index] atScrollPosition:UITableViewScrollPositionTop animated:YES];
-    return index;
-}
 
 #pragma mark - Table View Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (!self.searchController.active) {
-//        NSString *str = _allDataSource[indexPath.section][indexPath.row];
-        self.block(_allDataSource[indexPath.section][indexPath.row]);
+        self.block(_dataSource[indexPath.row]);
     }else{
         self.block(_searchDataSource[indexPath.row]);
     }

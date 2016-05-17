@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "SearchViewController.h"
 #import "ViewController.h"
 
 @interface AppDelegate ()
@@ -21,8 +20,7 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    ViewController *viewC = [story instantiateViewControllerWithIdentifier:@"VC"];
+    ViewController *viewC = [ViewController new];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewC];
     [self.window setRootViewController:nav];
     [self.window makeKeyAndVisible];

@@ -16,6 +16,7 @@
 @interface AnotherSearchViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate>
 @property (strong, nonatomic) UITableView *friendTableView;
 @property (strong, nonatomic) UISearchBar *searchBar;
+@property (strong, nonatomic) NSArray *dataSource;/**<排序前的整个数据源*/
 @property (strong, nonatomic) NSArray *allDataSource;/**<排序后的整个数据源*/
 @property (strong, nonatomic) NSMutableArray *searchDataSource;/**<搜索结果数据源*/
 @property (strong, nonatomic) NSArray *indexDataSource;/**<索引数据源*/
@@ -28,7 +29,6 @@
 #pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"固定的搜索框";
     self.view.backgroundColor = [UIColor whiteColor];
     [self initData];
     [self.view addSubview:self.friendTableView];
@@ -121,6 +121,17 @@
     return index;
 }
 
+#pragma mark - Table View Delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (!_isSearch) {
+        self.block(_allDataSource[indexPath.section][indexPath.row]);
+    }else{
+        self.block(_searchDataSource[indexPath.row]);
+    }
+    [self searchBarCancelButtonClicked:self.searchBar];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark - UISearchBarDelegate
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
     [_searchDataSource removeAllObjects];
@@ -152,6 +163,11 @@
     _searchBar.text = @"";
     _isSearch = NO;
     [_friendTableView reloadData];
+}
+
+#pragma mark - block
+- (void)didSelectedItem:(SelectedItem)block {
+    self.block = block;
 }
 
 @end

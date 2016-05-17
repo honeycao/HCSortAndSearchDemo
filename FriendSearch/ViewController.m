@@ -18,8 +18,11 @@
 
 
 - (void)viewDidLoad {
-    self.navigationItem.title = @"搜索框选择";
+    self.navigationItem.title = @"搜索类型";
     [super viewDidLoad];
+    UIBarButtonItem *back = [[UIBarButtonItem alloc]init];
+    back.title = @"";
+    self.navigationItem.backBarButtonItem = back;
 }
 
 - (void)didReceiveMemoryWarning {

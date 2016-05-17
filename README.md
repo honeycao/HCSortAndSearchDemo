@@ -1,17 +1,23 @@
 # SearchDemo
 
-全方位搜索功能，支持中英文互搜，联想搜索等
-![image](https://github.com/honeycao/SearchDemo/blob/master/FriendSearch.gif ) 
+通讯录式搜索模型，搜索功能强大，支持中英文互搜，联想搜索，模糊搜索等。
+![image](https://github.com/honeycao/SearchDemo/blob/master/FriendSearchDemo.gif ) 
 
->对网上一些搜索代码的总结，功能基本都可以
+##导航
 
-##1、实现功能
 
-* 自动对传进去的数据分组，按首字母分组
+##1、功能
 
-* 支持多种搜索：输入内容包含在文字中也可以搜索出来，中文用英文可以进行搜索出来等，满足目前需要的搜索任务
+* 可对传进去的数据源进行分组，按首字母分组，同时可以获取到数据源中所有的首字母等
+
+* 支持多种搜索：输入内容包含在文字中也可以搜索出来，中文用英文可以进行搜索出来等，满足目前需要的搜索要求
 
 * 做了两套搜索，一套是固定的搜索框，另外一套是搜索框随着`tableview`滚动而滚动
+
+
+##2、使用方法
+* 
+* 如果demo中的模型和搜索都需要，那么可以按照`SearchViewController`和`AnotherSearchViewController`来做
 
 `2016、4、7 update`
 

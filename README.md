@@ -4,6 +4,7 @@
 
 ![image](https://github.com/honeycao/SearchDemo/blob/master/FriendSearch.gif) 
 
+------
 ##导航
 1、[功能](https://github.com/honeycao/SearchDemo#功能)
 

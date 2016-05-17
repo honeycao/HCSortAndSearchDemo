@@ -1,14 +1,19 @@
 # SearchDemo
 
 通讯录式搜索模型，搜索功能强大，支持中英文互搜，联想搜索，模糊搜索等。
-![image](https://github.com/honeycao/SearchDemo/blob/master/FriendSearchDemo.gif ) 
+![image](https://github.com/honeycao/SearchDemo/blob/master/FriendSearch.gif) 
 
 ##导航
 1、[功能](https://github.com/honeycao/SearchDemo#功能)
+
 2、[使用方法](https://github.com/honeycao/SearchDemo#使用方法)
+
 3、[Demo使用](https://github.com/honeycao/SearchDemo#Demo使用)
+
 4、[Q-A](https://github.com/honeycao/SearchDemo#Q-A)
+
 5、[后期完善](https://github.com/honeycao/SearchDemo#后期完善)
+
 6、[备注](https://github.com/honeycao/SearchDemo#备注)
 
 ##1、功能

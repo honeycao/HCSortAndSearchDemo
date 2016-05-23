@@ -7,6 +7,7 @@
 //
 
 #import "NSString+PinYin4Cocoa.h"
+#import "HCHeader.h"
 
 @implementation NSString (PinYin4Cocoa)
 

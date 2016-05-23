@@ -11,6 +11,8 @@
 #import "PinYinForObjc.h"
 #import "objc/runtime.h"
 #import <UIKit/UIKit.h>
+#import "HCHeader.h"
+
 @implementation ZYPinYinSearch
 +(NSArray *)searchWithOriginalArray:(NSArray *)originalArray andSearchText:(NSString *)searchText andSearchByPropertyName:(NSString *)propertyName{
     NSMutableArray * dataSourceArray = [[NSMutableArray alloc]init];

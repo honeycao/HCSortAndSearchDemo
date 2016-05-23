@@ -10,6 +10,7 @@
 #import "SearchViewController.h"
 #import "AnotherSearchViewController.h"
 #import "EasySerachViewController.h"
+#import "HCHeader.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic) UITableView *titleTableView;
@@ -28,6 +29,8 @@
     self.navigationItem.backBarButtonItem = back;
     _dataSource = @[@"搜索栏滚动式通讯录",@"搜索栏固定式通讯录",@"单独调用搜索功能"];
     [self.view addSubview:self.titleTableView];
+    
+    NSLog(@"cyq_%@",[NSDate date]);
 }
 
 - (void)didReceiveMemoryWarning {

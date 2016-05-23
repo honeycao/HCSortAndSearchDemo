@@ -3,7 +3,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import "pinyin.h"
+//#import "pinyin.h"
 
 @interface ChineseString : NSObject
 @property(retain,nonatomic)NSString *string;

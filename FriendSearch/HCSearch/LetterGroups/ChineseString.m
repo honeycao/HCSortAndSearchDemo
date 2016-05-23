@@ -115,13 +115,25 @@
         }else{
             if(![chineseString.string isEqualToString:@""]){
                 NSString *pinYinResult=[NSString string];
-              //  for(int j=0;j<chineseString.string.length;j++){
-                    NSString *singlePinyinLetter=[[NSString stringWithFormat:@"%c",
-                                                   pinyinFirstLetter([chineseString.string
-                                                                      characterAtIndex:0])]uppercaseString];
-                    
-                    pinYinResult=[pinYinResult stringByAppendingString:singlePinyinLetter];
-              //  }
+                if ([[chineseString.string substringToIndex:1] isEqualToString:@"长"]) {
+                    pinYinResult = @"C";
+                }else{
+                     NSString *headLetter = [[self transform:chineseString.string] substringToIndex:1];
+                    char commitChar = [headLetter characterAtIndex:0];
+                    if (commitChar >= 'A' && commitChar <= 'Z') {
+                        pinYinResult=[pinYinResult stringByAppendingString:headLetter];
+                    }else{
+                        pinYinResult = @"#";
+                    }
+//                    pinYinResult=[pinYinResult stringByAppendingString:headLetter];
+                }
+
+//                NSString *singlePinyinLetter=[[NSString stringWithFormat:@"%c",
+//                                                   pinyinFirstLetter([chineseString.string
+//                                                                      characterAtIndex:0])]uppercaseString];
+//                    
+//                    pinYinResult=[pinYinResult stringByAppendingString:singlePinyinLetter];
+            
                 chineseString.pinYin=pinYinResult;
             }else{
                 chineseString.pinYin=@"";
@@ -135,6 +147,15 @@
 
     return chineseStringsArray;
 }
+
++ (NSString *)transform:(NSString *)chinese
+{
+    NSMutableString *pinyin = [chinese mutableCopy];
+    CFStringTransform((__bridge CFMutableStringRef)pinyin, NULL, kCFStringTransformMandarinLatin, NO);
+    CFStringTransform((__bridge CFMutableStringRef)pinyin, NULL, kCFStringTransformStripCombiningMarks, NO);
+    return [pinyin uppercaseString];
+}
+
 #pragma mark - 返回一组字母排序数组
 +(NSMutableArray*)SortArray:(NSArray*)stringArr
 {

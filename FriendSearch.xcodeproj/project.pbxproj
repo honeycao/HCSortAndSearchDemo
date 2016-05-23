@@ -16,7 +16,6 @@
 		2F52A9251CA92A420060D755 /* FriendSearchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F52A9241CA92A420060D755 /* FriendSearchUITests.m */; };
 		2F52A9571CA930C20060D755 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F52A9561CA930C20060D755 /* SearchViewController.m */; };
 		2F530F521CEAC2620020B8F6 /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530F3D1CEAC2620020B8F6 /* ChineseString.m */; };
-		2F530F531CEAC2620020B8F6 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 2F530F3E1CEAC2620020B8F6 /* pinyin.c */; };
 		2F530F541CEAC2620020B8F6 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530F421CEAC2620020B8F6 /* ChineseInclude.m */; };
 		2F530F551CEAC2620020B8F6 /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530F441CEAC2620020B8F6 /* ChineseToPinyinResource.m */; };
 		2F530F561CEAC2620020B8F6 /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530F461CEAC2620020B8F6 /* HanyuPinyinOutputFormat.m */; };
@@ -67,8 +66,6 @@
 		2F52A9561CA930C20060D755 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		2F530F3C1CEAC2620020B8F6 /* ChineseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseString.h; sourceTree = "<group>"; };
 		2F530F3D1CEAC2620020B8F6 /* ChineseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseString.m; sourceTree = "<group>"; };
-		2F530F3E1CEAC2620020B8F6 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
-		2F530F3F1CEAC2620020B8F6 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
 		2F530F411CEAC2620020B8F6 /* ChineseInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseInclude.h; sourceTree = "<group>"; };
 		2F530F421CEAC2620020B8F6 /* ChineseInclude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseInclude.m; sourceTree = "<group>"; };
 		2F530F431CEAC2620020B8F6 /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
@@ -205,8 +202,6 @@
 			children = (
 				2F530F3C1CEAC2620020B8F6 /* ChineseString.h */,
 				2F530F3D1CEAC2620020B8F6 /* ChineseString.m */,
-				2F530F3E1CEAC2620020B8F6 /* pinyin.c */,
-				2F530F3F1CEAC2620020B8F6 /* pinyin.h */,
 			);
 			path = LetterGroups;
 			sourceTree = "<group>";
@@ -367,7 +362,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F530F591CEAC2620020B8F6 /* PinYinForObjc.m in Sources */,
-				2F530F531CEAC2620020B8F6 /* pinyin.c in Sources */,
 				2FA432521CAA10FB0034A334 /* ViewController.m in Sources */,
 				2F530F551CEAC2620020B8F6 /* ChineseToPinyinResource.m in Sources */,
 				2F52A9571CA930C20060D755 /* SearchViewController.m in Sources */,

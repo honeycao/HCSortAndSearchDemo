@@ -44,7 +44,6 @@
 #pragma mark - Init
 - (void)initData {
     _dataSource = @[@"九寨沟",@"鼓浪屿",@"香格里拉",@"千岛湖",@"西双版纳",@"嫦娥1号",@"1314Love",@"故宫",@"上海科技馆",@"东方明珠",@"外滩",@"HK香港",@"CapeTown",@"The Grand Canyon",@"4567.com",@"-你me",@"长江",@"长江1号"];
-//    _dataSource = @[@"长江",@"长江1号",@"敞开"];
     _searchDataSource = [NSMutableArray new];
     //获取索引的首字母
     _indexDataSource = [ChineseString IndexArray:_dataSource];

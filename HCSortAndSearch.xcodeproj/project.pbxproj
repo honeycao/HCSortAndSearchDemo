@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F13A88F1D13EE9C00031C31 /* HCSortString.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13A88E1D13EE9C00031C31 /* HCSortString.m */; };
+		2F13A8951D13F08500031C31 /* ModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13A8941D13F08500031C31 /* ModelViewController.m */; };
+		2F13A8981D13F20200031C31 /* ModelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13A8971D13F20200031C31 /* ModelCell.m */; };
+		2F4EBCA51D19239600D1D527 /* UIAlertController+HCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EBCA41D19239500D1D527 /* UIAlertController+HCAdd.m */; };
+		2F52A9011CA92A400060D755 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F52A9001CA92A400060D755 /* main.m */; };
+		2F52A9041CA92A400060D755 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F52A9031CA92A400060D755 /* AppDelegate.m */; };
+		2F52A90A1CA92A410060D755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F52A9081CA92A410060D755 /* Main.storyboard */; };
+		2F52A90C1CA92A410060D755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F52A90B1CA92A410060D755 /* Assets.xcassets */; };
+		2F52A90F1CA92A410060D755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F52A90D1CA92A410060D755 /* LaunchScreen.storyboard */; };
+		2F52A91A1CA92A410060D755 /* HCSortAndSearchDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F52A9191CA92A410060D755 /* HCSortAndSearchDemoTests.m */; };
+		2F52A9251CA92A420060D755 /* HCSortAndSearchDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F52A9241CA92A420060D755 /* HCSortAndSearchDemoUITests.m */; };
+		2F52A9571CA930C20060D755 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F52A9561CA930C20060D755 /* SearchViewController.m */; };
+		2F530F541CEAC2620020B8F6 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530F421CEAC2620020B8F6 /* ChineseInclude.m */; };
+		2F530F551CEAC2620020B8F6 /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530F441CEAC2620020B8F6 /* ChineseToPinyinResource.m */; };
+		2F530F561CEAC2620020B8F6 /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530F461CEAC2620020B8F6 /* HanyuPinyinOutputFormat.m */; };
+		2F530F571CEAC2620020B8F6 /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530F481CEAC2620020B8F6 /* NSString+PinYin4Cocoa.m */; };
+		2F530F581CEAC2620020B8F6 /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530F4A1CEAC2620020B8F6 /* PinyinFormatter.m */; };
+		2F530F591CEAC2620020B8F6 /* PinYinForObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530F4C1CEAC2620020B8F6 /* PinYinForObjc.m */; };
+		2F530F5A1CEAC2620020B8F6 /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530F4E1CEAC2620020B8F6 /* PinyinHelper.m */; };
+		2F530F5B1CEAC2620020B8F6 /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2F530F4F1CEAC2620020B8F6 /* unicode_to_hanyu_pinyin.txt */; };
+		2F530F5C1CEAC2620020B8F6 /* ZYPinYinSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530F511CEAC2620020B8F6 /* ZYPinYinSearch.m */; };
+		2F530F5F1CEAC3030020B8F6 /* EasySerachViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530F5E1CEAC3030020B8F6 /* EasySerachViewController.m */; };
+		2FA432521CAA10FB0034A334 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA432511CAA10FB0034A334 /* ViewController.m */; };
+		2FA432551CAA20900034A334 /* AnotherSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA432541CAA20900034A334 /* AnotherSearchViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F52A9161CA92A410060D755 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F52A8F41CA92A400060D755 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F52A8FB1CA92A400060D755;
+			remoteInfo = FriendSearch;
+		};
+		2F52A9211CA92A410060D755 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F52A8F41CA92A400060D755 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F52A8FB1CA92A400060D755;
+			remoteInfo = FriendSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F13A88D1D13EE9C00031C31 /* HCSortString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCSortString.h; sourceTree = "<group>"; };
+		2F13A88E1D13EE9C00031C31 /* HCSortString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCSortString.m; sourceTree = "<group>"; };
+		2F13A8931D13F08500031C31 /* ModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelViewController.h; sourceTree = "<group>"; };
+		2F13A8941D13F08500031C31 /* ModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelViewController.m; sourceTree = "<group>"; };
+		2F13A8961D13F20200031C31 /* ModelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelCell.h; sourceTree = "<group>"; };
+		2F13A8971D13F20200031C31 /* ModelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelCell.m; sourceTree = "<group>"; };
+		2F4EBCA31D19239500D1D527 /* UIAlertController+HCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+HCAdd.h"; sourceTree = "<group>"; };
+		2F4EBCA41D19239500D1D527 /* UIAlertController+HCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+HCAdd.m"; sourceTree = "<group>"; };
+		2F52A8FC1CA92A400060D755 /* HCSortAndSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCSortAndSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F52A9001CA92A400060D755 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F52A9021CA92A400060D755 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F52A9031CA92A400060D755 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F52A9091CA92A410060D755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F52A90B1CA92A410060D755 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F52A90E1CA92A410060D755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F52A9101CA92A410060D755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F52A9151CA92A410060D755 /* HCSortAndSearch.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HCSortAndSearch.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F52A9191CA92A410060D755 /* HCSortAndSearchDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCSortAndSearchDemoTests.m; sourceTree = "<group>"; };
+		2F52A91B1CA92A410060D755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F52A9201CA92A410060D755 /* HCSortAndSearch.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HCSortAndSearch.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F52A9241CA92A420060D755 /* HCSortAndSearchDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCSortAndSearchDemoUITests.m; sourceTree = "<group>"; };
+		2F52A9261CA92A420060D755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F52A9551CA930C20060D755 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		2F52A9561CA930C20060D755 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		2F530F411CEAC2620020B8F6 /* ChineseInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseInclude.h; sourceTree = "<group>"; };
+		2F530F421CEAC2620020B8F6 /* ChineseInclude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseInclude.m; sourceTree = "<group>"; };
+		2F530F431CEAC2620020B8F6 /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
+		2F530F441CEAC2620020B8F6 /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyinResource.m; sourceTree = "<group>"; };
+		2F530F451CEAC2620020B8F6 /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
+		2F530F461CEAC2620020B8F6 /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
+		2F530F471CEAC2620020B8F6 /* NSString+PinYin4Cocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PinYin4Cocoa.h"; sourceTree = "<group>"; };
+		2F530F481CEAC2620020B8F6 /* NSString+PinYin4Cocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PinYin4Cocoa.m"; sourceTree = "<group>"; };
+		2F530F491CEAC2620020B8F6 /* PinyinFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinFormatter.h; sourceTree = "<group>"; };
+		2F530F4A1CEAC2620020B8F6 /* PinyinFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinFormatter.m; sourceTree = "<group>"; };
+		2F530F4B1CEAC2620020B8F6 /* PinYinForObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinYinForObjc.h; sourceTree = "<group>"; };
+		2F530F4C1CEAC2620020B8F6 /* PinYinForObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinYinForObjc.m; sourceTree = "<group>"; };
+		2F530F4D1CEAC2620020B8F6 /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinHelper.h; sourceTree = "<group>"; };
+		2F530F4E1CEAC2620020B8F6 /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinHelper.m; sourceTree = "<group>"; };
+		2F530F4F1CEAC2620020B8F6 /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		2F530F501CEAC2620020B8F6 /* ZYPinYinSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPinYinSearch.h; sourceTree = "<group>"; };
+		2F530F511CEAC2620020B8F6 /* ZYPinYinSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPinYinSearch.m; sourceTree = "<group>"; };
+		2F530F5D1CEAC3030020B8F6 /* EasySerachViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasySerachViewController.h; sourceTree = "<group>"; };
+		2F530F5E1CEAC3030020B8F6 /* EasySerachViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasySerachViewController.m; sourceTree = "<group>"; };
+		2FA0F0361CF6D95400CB90AE /* HCSearch-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HCSearch-prefix.pch"; sourceTree = "<group>"; };
+		2FA432501CAA10FB0034A334 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2FA432511CAA10FB0034A334 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2FA432531CAA20900034A334 /* AnotherSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnotherSearchViewController.h; sourceTree = "<group>"; };
+		2FA432541CAA20900034A334 /* AnotherSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnotherSearchViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F52A8F91CA92A400060D755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F52A9121CA92A410060D755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F52A91D1CA92A410060D755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F13A88C1D13EE9C00031C31 /* HCSortString */ = {
+			isa = PBXGroup;
+			children = (
+				2F4EBCA31D19239500D1D527 /* UIAlertController+HCAdd.h */,
+				2F4EBCA41D19239500D1D527 /* UIAlertController+HCAdd.m */,
+				2F13A88D1D13EE9C00031C31 /* HCSortString.h */,
+				2F13A88E1D13EE9C00031C31 /* HCSortString.m */,
+			);
+			path = HCSortString;
+			sourceTree = "<group>";
+		};
+		2F52A8F31CA92A3F0060D755 = {
+			isa = PBXGroup;
+			children = (
+				2F530F3A1CEAC2620020B8F6 /* HCSortAndSearch */,
+				2F52A8FE1CA92A400060D755 /* HCSortAndSearchDemo */,
+				2F52A9181CA92A410060D755 /* HCSortAndSearchDemoTests */,
+				2F52A9231CA92A420060D755 /* HCSortAndSearchDemoUITests */,
+				2F52A8FD1CA92A400060D755 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F52A8FD1CA92A400060D755 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F52A8FC1CA92A400060D755 /* HCSortAndSearch.app */,
+				2F52A9151CA92A410060D755 /* HCSortAndSearch.xctest */,
+				2F52A9201CA92A410060D755 /* HCSortAndSearch.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F52A8FE1CA92A400060D755 /* HCSortAndSearchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2F52A9021CA92A400060D755 /* AppDelegate.h */,
+				2F52A9031CA92A400060D755 /* AppDelegate.m */,
+				2FA432501CAA10FB0034A334 /* ViewController.h */,
+				2FA432511CAA10FB0034A334 /* ViewController.m */,
+				2F52A9551CA930C20060D755 /* SearchViewController.h */,
+				2F52A9561CA930C20060D755 /* SearchViewController.m */,
+				2FA432531CAA20900034A334 /* AnotherSearchViewController.h */,
+				2FA432541CAA20900034A334 /* AnotherSearchViewController.m */,
+				2F530F5D1CEAC3030020B8F6 /* EasySerachViewController.h */,
+				2F530F5E1CEAC3030020B8F6 /* EasySerachViewController.m */,
+				2F13A8931D13F08500031C31 /* ModelViewController.h */,
+				2F13A8941D13F08500031C31 /* ModelViewController.m */,
+				2F13A8961D13F20200031C31 /* ModelCell.h */,
+				2F13A8971D13F20200031C31 /* ModelCell.m */,
+				2F52A9081CA92A410060D755 /* Main.storyboard */,
+				2F52A90B1CA92A410060D755 /* Assets.xcassets */,
+				2F52A90D1CA92A410060D755 /* LaunchScreen.storyboard */,
+				2F52A9101CA92A410060D755 /* Info.plist */,
+				2F52A8FF1CA92A400060D755 /* Supporting Files */,
+			);
+			path = HCSortAndSearchDemo;
+			sourceTree = "<group>";
+		};
+		2F52A8FF1CA92A400060D755 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FA0F0361CF6D95400CB90AE /* HCSearch-prefix.pch */,
+				2F52A9001CA92A400060D755 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F52A9181CA92A410060D755 /* HCSortAndSearchDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F52A9191CA92A410060D755 /* HCSortAndSearchDemoTests.m */,
+				2F52A91B1CA92A410060D755 /* Info.plist */,
+			);
+			path = HCSortAndSearchDemoTests;
+			sourceTree = "<group>";
+		};
+		2F52A9231CA92A420060D755 /* HCSortAndSearchDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F52A9241CA92A420060D755 /* HCSortAndSearchDemoUITests.m */,
+				2F52A9261CA92A420060D755 /* Info.plist */,
+			);
+			path = HCSortAndSearchDemoUITests;
+			sourceTree = "<group>";
+		};
+		2F530F3A1CEAC2620020B8F6 /* HCSortAndSearch */ = {
+			isa = PBXGroup;
+			children = (
+				2F13A88C1D13EE9C00031C31 /* HCSortString */,
+				2F530F401CEAC2620020B8F6 /* PinYinSearchLib */,
+			);
+			name = HCSortAndSearch;
+			path = HCSortAndSearchDemo/HCSortAndSearch;
+			sourceTree = "<group>";
+		};
+		2F530F401CEAC2620020B8F6 /* PinYinSearchLib */ = {
+			isa = PBXGroup;
+			children = (
+				2F530F411CEAC2620020B8F6 /* ChineseInclude.h */,
+				2F530F421CEAC2620020B8F6 /* ChineseInclude.m */,
+				2F530F431CEAC2620020B8F6 /* ChineseToPinyinResource.h */,
+				2F530F441CEAC2620020B8F6 /* ChineseToPinyinResource.m */,
+				2F530F451CEAC2620020B8F6 /* HanyuPinyinOutputFormat.h */,
+				2F530F461CEAC2620020B8F6 /* HanyuPinyinOutputFormat.m */,
+				2F530F471CEAC2620020B8F6 /* NSString+PinYin4Cocoa.h */,
+				2F530F481CEAC2620020B8F6 /* NSString+PinYin4Cocoa.m */,
+				2F530F491CEAC2620020B8F6 /* PinyinFormatter.h */,
+				2F530F4A1CEAC2620020B8F6 /* PinyinFormatter.m */,
+				2F530F4B1CEAC2620020B8F6 /* PinYinForObjc.h */,
+				2F530F4C1CEAC2620020B8F6 /* PinYinForObjc.m */,
+				2F530F4D1CEAC2620020B8F6 /* PinyinHelper.h */,
+				2F530F4E1CEAC2620020B8F6 /* PinyinHelper.m */,
+				2F530F4F1CEAC2620020B8F6 /* unicode_to_hanyu_pinyin.txt */,
+				2F530F501CEAC2620020B8F6 /* ZYPinYinSearch.h */,
+				2F530F511CEAC2620020B8F6 /* ZYPinYinSearch.m */,
+			);
+			path = PinYinSearchLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F52A8FB1CA92A400060D755 /* HCSortAndSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F52A9291CA92A420060D755 /* Build configuration list for PBXNativeTarget "HCSortAndSearch" */;
+			buildPhases = (
+				2F52A8F81CA92A400060D755 /* Sources */,
+				2F52A8F91CA92A400060D755 /* Frameworks */,
+				2F52A8FA1CA92A400060D755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HCSortAndSearch;
+			productName = FriendSearch;
+			productReference = 2F52A8FC1CA92A400060D755 /* HCSortAndSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F52A9141CA92A410060D755 /* HCSortAndSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F52A92C1CA92A420060D755 /* Build configuration list for PBXNativeTarget "HCSortAndSearchTests" */;
+			buildPhases = (
+				2F52A9111CA92A410060D755 /* Sources */,
+				2F52A9121CA92A410060D755 /* Frameworks */,
+				2F52A9131CA92A410060D755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F52A9171CA92A410060D755 /* PBXTargetDependency */,
+			);
+			name = HCSortAndSearchTests;
+			productName = FriendSearchTests;
+			productReference = 2F52A9151CA92A410060D755 /* HCSortAndSearch.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F52A91F1CA92A410060D755 /* HCSortAndSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F52A92F1CA92A420060D755 /* Build configuration list for PBXNativeTarget "HCSortAndSearchUITests" */;
+			buildPhases = (
+				2F52A91C1CA92A410060D755 /* Sources */,
+				2F52A91D1CA92A410060D755 /* Frameworks */,
+				2F52A91E1CA92A410060D755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F52A9221CA92A410060D755 /* PBXTargetDependency */,
+			);
+			name = HCSortAndSearchUITests;
+			productName = FriendSearchUITests;
+			productReference = 2F52A9201CA92A410060D755 /* HCSortAndSearch.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F52A8F41CA92A400060D755 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Caoyq;
+				TargetAttributes = {
+					2F52A8FB1CA92A400060D755 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					2F52A9141CA92A410060D755 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 2F52A8FB1CA92A400060D755;
+					};
+					2F52A91F1CA92A410060D755 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 2F52A8FB1CA92A400060D755;
+					};
+				};
+			};
+			buildConfigurationList = 2F52A8F71CA92A400060D755 /* Build configuration list for PBXProject "HCSortAndSearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F52A8F31CA92A3F0060D755;
+			productRefGroup = 2F52A8FD1CA92A400060D755 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F52A8FB1CA92A400060D755 /* HCSortAndSearch */,
+				2F52A9141CA92A410060D755 /* HCSortAndSearchTests */,
+				2F52A91F1CA92A410060D755 /* HCSortAndSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F52A8FA1CA92A400060D755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F530F5B1CEAC2620020B8F6 /* unicode_to_hanyu_pinyin.txt in Resources */,
+				2F52A90F1CA92A410060D755 /* LaunchScreen.storyboard in Resources */,
+				2F52A90C1CA92A410060D755 /* Assets.xcassets in Resources */,
+				2F52A90A1CA92A410060D755 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F52A9131CA92A410060D755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F52A91E1CA92A410060D755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F52A8F81CA92A400060D755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F13A8951D13F08500031C31 /* ModelViewController.m in Sources */,
+				2F530F591CEAC2620020B8F6 /* PinYinForObjc.m in Sources */,
+				2FA432521CAA10FB0034A334 /* ViewController.m in Sources */,
+				2F530F551CEAC2620020B8F6 /* ChineseToPinyinResource.m in Sources */,
+				2F52A9571CA930C20060D755 /* SearchViewController.m in Sources */,
+				2F530F571CEAC2620020B8F6 /* NSString+PinYin4Cocoa.m in Sources */,
+				2FA432551CAA20900034A334 /* AnotherSearchViewController.m in Sources */,
+				2F530F581CEAC2620020B8F6 /* PinyinFormatter.m in Sources */,
+				2F530F5C1CEAC2620020B8F6 /* ZYPinYinSearch.m in Sources */,
+				2F13A8981D13F20200031C31 /* ModelCell.m in Sources */,
+				2F530F561CEAC2620020B8F6 /* HanyuPinyinOutputFormat.m in Sources */,
+				2F13A88F1D13EE9C00031C31 /* HCSortString.m in Sources */,
+				2F530F5A1CEAC2620020B8F6 /* PinyinHelper.m in Sources */,
+				2F530F5F1CEAC3030020B8F6 /* EasySerachViewController.m in Sources */,
+				2F52A9041CA92A400060D755 /* AppDelegate.m in Sources */,
+				2F4EBCA51D19239600D1D527 /* UIAlertController+HCAdd.m in Sources */,
+				2F530F541CEAC2620020B8F6 /* ChineseInclude.m in Sources */,
+				2F52A9011CA92A400060D755 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F52A9111CA92A410060D755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F52A91A1CA92A410060D755 /* HCSortAndSearchDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F52A91C1CA92A410060D755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F52A9251CA92A420060D755 /* HCSortAndSearchDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F52A9171CA92A410060D755 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F52A8FB1CA92A400060D755 /* HCSortAndSearch */;
+			targetProxy = 2F52A9161CA92A410060D755 /* PBXContainerItemProxy */;
+		};
+		2F52A9221CA92A410060D755 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F52A8FB1CA92A400060D755 /* HCSortAndSearch */;
+			targetProxy = 2F52A9211CA92A410060D755 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F52A9081CA92A410060D755 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F52A9091CA92A410060D755 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F52A90D1CA92A410060D755 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F52A90E1CA92A410060D755 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F52A9271CA92A420060D755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-DEBUG",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2F52A9281CA92A420060D755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				"OTHER_LDFLAGS[arch=*]" = "-Objc";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F52A92A1CA92A420060D755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HCSortAndSearchDemo/HCSearch-prefix.pch";
+				INFOPLIST_FILE = HCSortAndSearchDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Caoyq.HCSortAndSearchDemo;
+				PRODUCT_NAME = HCSortAndSearch;
+			};
+			name = Debug;
+		};
+		2F52A92B1CA92A420060D755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HCSortAndSearchDemo/HCSearch-prefix.pch";
+				INFOPLIST_FILE = HCSortAndSearchDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Caoyq.HCSortAndSearchDemo;
+				PRODUCT_NAME = HCSortAndSearch;
+			};
+			name = Release;
+		};
+		2F52A92D1CA92A420060D755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HCSortAndSearchDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Caoyq.HCSortAndSearchDemoTests;
+				PRODUCT_NAME = HCSortAndSearch;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HCSortAndSearch.app/HCSortAndSearch";
+			};
+			name = Debug;
+		};
+		2F52A92E1CA92A420060D755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HCSortAndSearchDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Caoyq.HCSortAndSearchDemoTests;
+				PRODUCT_NAME = HCSortAndSearch;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HCSortAndSearch.app/HCSortAndSearch";
+			};
+			name = Release;
+		};
+		2F52A9301CA92A420060D755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HCSortAndSearchDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Caoyq.HCSortAndSearchDemoUITests;
+				PRODUCT_NAME = HCSortAndSearch;
+				TEST_TARGET_NAME = HCSortAndSearchDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2F52A9311CA92A420060D755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HCSortAndSearchDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Caoyq.HCSortAndSearchDemoUITests;
+				PRODUCT_NAME = HCSortAndSearch;
+				TEST_TARGET_NAME = HCSortAndSearchDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F52A8F71CA92A400060D755 /* Build configuration list for PBXProject "HCSortAndSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F52A9271CA92A420060D755 /* Debug */,
+				2F52A9281CA92A420060D755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F52A9291CA92A420060D755 /* Build configuration list for PBXNativeTarget "HCSortAndSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F52A92A1CA92A420060D755 /* Debug */,
+				2F52A92B1CA92A420060D755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F52A92C1CA92A420060D755 /* Build configuration list for PBXNativeTarget "HCSortAndSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F52A92D1CA92A420060D755 /* Debug */,
+				2F52A92E1CA92A420060D755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F52A92F1CA92A420060D755 /* Build configuration list for PBXNativeTarget "HCSortAndSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F52A9301CA92A420060D755 /* Debug */,
+				2F52A9311CA92A420060D755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F52A8F41CA92A400060D755 /* Project object */;
+}

@@ -1,9 +1,0 @@
-
-#ifdef __OBJC__
-
-#import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
-
-//其他第三方库头文件
-
-#endif

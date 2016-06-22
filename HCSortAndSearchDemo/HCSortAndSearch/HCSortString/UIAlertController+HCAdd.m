@@ -10,17 +10,6 @@
 
 @implementation UIAlertController (HCAdd)
 
-
-///初始化一个对象
-+ (UIAlertController *)share {
-    static UIAlertController *alertController = nil;
-    static dispatch_once_t oneToken;
-    dispatch_once(&oneToken, ^{
-        alertController = [[UIAlertController alloc]init];
-    });
-    return alertController;
-}
-
 + (void)showAlertViewWithTitle:(NSString *)title Message:(NSString *)message BtnTitles:(NSArray<NSString *> *)btnTitles ClickBtn:(void (^)(NSInteger index))clickBtnBlock {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
@@ -54,7 +43,7 @@
             [alert addAction:action];
         }
     }
-    [[[self share] getCurrentViewController] presentViewController:alert animated:YES completion:nil];
+    [[self getCurrentViewController] presentViewController:alert animated:YES completion:nil];
 #endif
 }
 
@@ -72,14 +61,14 @@
         }];
         [alert addAction:action];
     }
-    [[[self share] getCurrentViewController] presentViewController:alert animated:YES completion:nil];
+    [[self getCurrentViewController] presentViewController:alert animated:YES completion:nil];
 #endif
 }
 
 /**
  * 获取当前呈现的ViewController
  */
-- (UIViewController *)getCurrentViewController {
++ (UIViewController *)getCurrentViewController {
     UIViewController *result = nil;
     
     UIWindow * window = [[UIApplication sharedApplication] keyWindow];

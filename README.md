@@ -1,4 +1,4 @@
-# SearchDemo
+# HCSortAndSearchDemo
 
 通讯录式排序搜索模型，首字母排序、中英文混排等；搜索功能强大，支持中英文互搜，联想搜索，模糊搜索等。
 

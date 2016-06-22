@@ -6,17 +6,17 @@
 
 ------
 ##导航
-1、[功能](https://github.com/honeycao/SearchDemo#功能)
+1、[功能](https://github.com/honeycao/HCSortAndSearchDemo#功能)
 
-2、[使用方法](https://github.com/honeycao/SearchDemo#使用方法)
+2、[使用方法](https://github.com/honeycao/HCSortAndSearchDemo#使用方法)
 
-3、[Demo使用](https://github.com/honeycao/SearchDemo#Demo使用)
+3、[Demo使用](https://github.com/honeycao/HCSortAndSearchDemo#Demo使用)
 
-4、[Q-A](https://github.com/honeycao/SearchDemo#Q-A)
+4、[Q-A](https://github.com/honeycao/HCSortAndSearchDemo#Q-A)
 
-5、[后期完善](https://github.com/honeycao/SearchDemo#后期完善)
+5、[后期完善](https://github.com/honeycao/HCSortAndSearchDemo#后期完善)
 
-6、[备注](https://github.com/honeycao/SearchDemo#备注)
+6、[备注](https://github.com/honeycao/HCSortAndSearchDemo#备注)
 
 ------
 

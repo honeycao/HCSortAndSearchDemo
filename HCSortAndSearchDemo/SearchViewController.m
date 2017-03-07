@@ -148,4 +148,9 @@
     self.block = block;
 }
 
+- (void)searchResult: (UISearchController *)searchController {
+    NSPredicate *precidate = [NSPredicate predicateWithFormat:@"displayName CONTAINS[cd] %@", searchController.searchBar.text];
+    
+}
+
 @end

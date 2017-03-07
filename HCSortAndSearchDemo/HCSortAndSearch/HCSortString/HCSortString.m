@@ -62,6 +62,11 @@
         }
     }else if ([objc isKindOfClass:[NSDictionary class]]){
         type = @"dict";
+        for (NSDictionary *dict in ary){
+            HCSortString *sortString = [HCSortString new];
+            sortString.string = dict[name];
+            [objAry addObject:sortString];
+        }
     }else{
         type = @"model";
         unsigned int propertyCount, i;
@@ -100,6 +105,8 @@
                 [item addObject:sort.string];
             }else if ([type isEqualToString:@"model"]){
                 [item addObject:sort.model];
+            }else {
+                [item addObject:sort.string];
             }
             [sortDic setObject:item forKey:itemString];
         }else{
@@ -108,6 +115,8 @@
                 [item addObject:sort.string];
             }else if ([type isEqualToString:@"model"]){
                 [item addObject:sort.model];
+            }else {
+                [item addObject:sort.string];
             }
         }
     }

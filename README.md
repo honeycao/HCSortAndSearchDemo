@@ -5,7 +5,7 @@
 ![image](https://github.com/honeycao/HCSortAndSearchDemo/blob/master/HCSortAndSearch.gif) 
 
 ------
-##导航
+## 导航
 1、[功能](https://github.com/honeycao/HCSortAndSearchDemo#功能)
 
 2、[使用方法](https://github.com/honeycao/HCSortAndSearchDemo#使用方法)
@@ -20,7 +20,7 @@
 
 ------
 
-##1、功能
+## 1、功能
 
 * 支持对数组排序，包括字符串数组和model数组
 
@@ -32,8 +32,10 @@
 
 * 做了选中之后的返回传值
 
-##2、使用方法
+## 2、使用方法
+
 * 下载并把Demo中的`HCSortAndSearch`添加到自己项目中，相关方法如下
+
 ```obj-c
 /**
 *  给数组按首字母排序和分组
@@ -63,6 +65,7 @@
 * 如果需要传入model数组，可按照第四套中对应方法来传值，添加头文件`#import "ZYPinYinSearch.h"`和`#import "HCSortString.h"`
 
 * 对于获取选中之后的返回值方法在`ViewController`中
+
 ```obj-c
 SearchViewController *search = [SearchViewController new];
 //返回选中搜索的结果
@@ -71,14 +74,17 @@ cell.detailTextLabel.text = item;
 }];
 
 ```
-##3、Demo使用
+## 3、Demo使用
+
 * 下载代码最初界面是`ViewController`，三个点击之后的页面分别是:搜索栏滚动式通讯录`SearchViewController`、搜索栏固定式通讯录`AnotherSearchViewController`和单独调用搜索功能`EasySerachViewController`
     传入Model排序搜索
 * 其中`HCSortAndSearch`文件夹是集成搜索功能的代码
 
-##4、Q-A
+## 4、Q-A
+
 `2016、6、21   版本：2.0.0`
 >这次作了较大改动
+
 * 文件和方法重定名
 * 重写排序相关的方法，使之更加完善和齐全
 * 解决之前不能传入model数组排序的问题
@@ -112,8 +118,8 @@ cell.detailTextLabel.text = item;
 
 ```
 
-##5、后期完善
+## 5、后期完善
 * 有时间将搜索代码进行简化。
 
-##6、备注
+## 6、备注
 >I am a rookie ，I am not God （有建议或想法请q：331864805 ，你的点赞是我最大的动力）
